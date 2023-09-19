@@ -19,6 +19,9 @@ body {
     color: var(--light);
 }
 
+a{
+    text-decoration: none;
+}
 
 /* palette colori */
 
@@ -98,8 +101,19 @@ body {
 
 .title-song{
     font-size: 10px;
+}
+
+.title-song, 
+.info-song i{
     color: var(--light-grey);
 }
+
+.title-song:hover,
+.info-song i:hover{
+    color: var(--light);
+}
+
+
 
 .toolbar .fa-heart{
     margin-right: 15px;
