@@ -14,12 +14,18 @@ img {
     width: 100%;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--light);
+}
+
 
 /* palette colori */
 
 :root {
-    --dark-grey:#141922;
     --grey: #282828;
+    --dark-grey:#141922;
+    --light-grey: #808080;
     --dark-blue:#141922;
     --light:#FFFFFF;
     --dark:#000000;
@@ -42,7 +48,6 @@ img {
 
 .toolbar {
    height: auto;
-   padding: 50px;
 }
 
 
@@ -68,6 +73,36 @@ img {
 
 .toolbar {
     background-color: var(--grey);
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 11px 26px 11px;
+}
+
+.info-song{
+    display: flex;
+    align-items: center;
+}
+
+.img-song{
+    max-width: 55px;
+    margin-right: 13px;
+}
+
+.song{
+    margin-right: 44px;
+}
+
+.artist-song{
+    font-size: 13px ;
+}
+
+.title-song{
+    font-size: 10px;
+    color: var(--light-grey);
+}
+
+.toolbar .fa-heart{
+    margin-right: 15px;
 }
 
 
@@ -76,12 +111,13 @@ img {
 
 /* debug */
 
-.debug .app {
-    border: 1px solid black;
+.debug .toolbar .col {
+    border: 1px solid red;
+    /* padding: 20px; */
 }
 
 .debug .main-content {
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
 
 .debug .toolbar {
@@ -93,6 +129,6 @@ img {
 }
 
 .debug main{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
