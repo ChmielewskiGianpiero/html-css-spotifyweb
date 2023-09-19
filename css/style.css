@@ -13,3 +13,64 @@ menu {
 img {
     width: 100%;
 }
+
+
+/* layout */
+
+.app{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-app{
+    flex-grow: 1;
+    display: flex;
+
+}
+
+.toolbar {
+   height: auto;
+   padding: 50px;
+}
+
+
+
+/* main content */
+
+
+.aside{
+    width: 230px;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+
+
+
+
+
+/* debug */
+
+.debug .app {
+    border: 1px solid black;
+}
+
+.debug .main-content {
+    border: 2px solid orange;
+}
+
+.debug .toolbar {
+    border: 2px solid red;
+}
+
+.debug aside{
+    border: 2px solid green;
+}
+
+.debug main{
+    border: 2px solid blue;
+}
+
