@@ -1,0 +1,7 @@
+/* aside responsive */
+
+@media (max-width: 575.98px) {
+    .aside{
+        width: 50px;
+    }
+}

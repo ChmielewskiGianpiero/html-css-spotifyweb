@@ -15,6 +15,17 @@ img {
 }
 
 
+/* palette colori */
+
+:root {
+    --dark-grey:#141922;
+    --grey: #282828;
+    --dark-blue:#141922;
+    --light:#FFFFFF;
+    --dark:#000000;
+
+}
+
 /* layout */
 
 .app{
@@ -41,12 +52,23 @@ img {
 
 .aside{
     width: 230px;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
 }
 
 .main-content{
     flex-grow: 1;
+    overflow: hidden;
+    background-color: var(--dark-blue);
 }
 
+
+/* toolbar */
+
+.toolbar {
+    background-color: var(--grey);
+}
 
 
 
@@ -63,11 +85,11 @@ img {
 }
 
 .debug .toolbar {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .debug aside{
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .debug main{
