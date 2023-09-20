@@ -36,7 +36,20 @@ a{
 
 }
 
+/* utility classes */
+
+.direction-column{
+    display: flex;
+    flex-direction: column;
+}
+
 /* layout */
+
+.app,
+.main-app,
+.toolbar{
+    overflow: hidden;
+}
 
 .app{
     display: flex;
@@ -79,7 +92,7 @@ a{
     background-color: var(--grey);
     display: flex;
     justify-content: space-between;
-    padding: 22px 11px 26px 11px;
+    padding: 10px 11px 10px 12px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -128,13 +141,95 @@ a{
     display: flex;
 }
 
+.player {
+    width: 50%;
+}
 
+.action-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
 
+.player-bar{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
 
+.action-list li:nth-child(3) {
+    font-size: 35px;
+    padding: 0px 50px;
+}
+
+.action-list li:nth-child(-n + 2) {
+    padding-left: 40px;
+}
+
+.action-list li:nth-last-child(-n + 2) {
+    padding-right: 40px;
+}
+
+.bar{
+    background-color: var(--light-grey);
+    border-radius: 100px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.bar-completed{
+    background-color: var(--light);
+    border-radius: 100px;
+    height: 6px;
+    width: 20%;
+}
+
+.bar-dot{
+    height: 15px;
+    width: 15px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: var(--light);
+    position: absolute;
+    top: -4px;
+    left: 130px;
+    display: none;
+} 
+
+.bar:hover .bar-dot, .bar:hover .bar-dot-volume{
+    display: block;
+}
+
+.bar:hover .bar-completed{
+    background-color: lime;
+}
+
+.volume-list {
+    display: flex;
+    align-items: center;
+    width: 230px;
+}
+
+.volume-list i{
+    margin-right: 15px;
+}
+
+.bar-dot-volume{
+    height: 15px;
+    width: 15px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: var(--light);
+    position: absolute;
+    top: -4px;
+    left: 20px;
+    display: none;
+} 
 
 /* debug */
 
-.debug .toolbar .col {
+.debug .toolbar .direction-column {
     border: 1px solid red;
     /* padding: 20px; */
 }
