@@ -21,6 +21,7 @@ body {
 
 a{
     text-decoration: none;
+    color: currentColor;
 }
 
 /* palette colori */
@@ -59,7 +60,7 @@ a{
 
 
 .aside{
-    width: 230px;
+    width: 235px;
     background-color: var(--dark);
     display: flex;
     flex-direction: column;
@@ -79,6 +80,9 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 22px 11px 26px 11px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .info-song{
@@ -87,16 +91,19 @@ a{
 }
 
 .img-song{
-    max-width: 55px;
+    width: 55px;
     margin-right: 13px;
 }
 
 .song{
     margin-right: 44px;
+    display: flex;
+    flex-direction: column;
 }
 
 .artist-song{
     font-size: 13px ;
+    font-weight: 800;
 }
 
 .title-song{
@@ -113,10 +120,12 @@ a{
     color: var(--light);
 }
 
-
-
 .toolbar .fa-heart{
     margin-right: 15px;
+}
+
+.action-button {
+    display: flex;
 }
 
 
