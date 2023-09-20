@@ -21,6 +21,41 @@
     .aside{
         width: 50px;
     }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-sm{
+        display: block;
+        max-width: 35px;
+    }
+
+    .aside-list{
+        padding: 0;
+        line-height: 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .home{
+        max-width: 40px;
+    }
+
+    .search {
+        max-width: 40px;
+    }
+
+    .library {
+        max-width: 40px;
+    }
+
+    .title-icon,
+    .playlist,
+    .icon-square,
+    .title-section-playlist{
+        display: none;
+    }
 }
 
 

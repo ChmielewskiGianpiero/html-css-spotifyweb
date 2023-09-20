@@ -43,9 +43,18 @@ a{
     flex-direction: column;
 }
 
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
 /* layout */
 
 .app,
+.aside
 .main-app,
 .toolbar{
     overflow: hidden;
@@ -69,7 +78,7 @@ a{
 
 
 
-/* main content */
+/* aside */
 
 
 .aside{
@@ -78,6 +87,56 @@ a{
     display: flex;
     flex-direction: column;
 }
+
+.nav-app{
+    flex-grow: 1;
+}
+
+.logo-sm{
+    display: none;
+}
+
+.logo{
+    padding: 25px 50px 0px 0px;
+    margin-bottom: 20px;
+}
+
+.home,
+.search,
+.library{
+    max-width: 25px;
+}
+
+.aside-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 25px;
+    line-height: 25px;
+}
+
+.aside-list{
+    color: var(--light-grey);
+    font-weight: 600;
+}
+
+.title-section-playlist{
+    color: var(--light);
+    font-size: 14px;
+}
+
+.title-icon{
+    padding-left: 5px;
+}
+
+.fa-square-plus{
+    font-size: 45px;
+    color: #A3A3A3;
+}
+
+
+
+/* main */
 
 .main-content{
     flex-grow: 1;
@@ -93,8 +152,6 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 10px 11px 10px 12px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
@@ -250,3 +307,11 @@ a{
     /* border: 2px solid blue; */
 }
 
+.debug .aside{
+    border: 1px solid red;
+}
+
+.debug .nav-app, 
+.debug .footer-aside{
+    border: 1px solid green;
+}
