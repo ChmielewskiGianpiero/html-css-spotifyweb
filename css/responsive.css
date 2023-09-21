@@ -36,6 +36,7 @@
         line-height: 0px;
         display: flex;
         align-items: center;
+        padding: 5px;
     }
 
     .home{

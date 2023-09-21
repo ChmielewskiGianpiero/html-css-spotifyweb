@@ -46,7 +46,6 @@ a{
 
 .flex{
     display: flex;
-    flex-wrap: wrap;
 }
 
 .items-center{
@@ -63,6 +62,10 @@ a{
 
 .gap{
     gap: 25px;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 /* component classes */
@@ -249,6 +252,37 @@ a{
     width: 35%;
     position: relative;
     left: 33px;
+}
+
+.col{
+    flex-basis: 15%;
+}
+
+.row-card-title{
+    padding-top: 50px;
+}
+
+.app-content{
+   
+}
+
+.app-content-text{
+    text-align: center;
+}
+
+.app-content-text h2{
+    font-size: 17px;
+    margin-bottom: 5px;
+    line-height: 23px;
+}
+
+.app-content-text p{
+    font-size: 10px;
+    color: var(--light-grey);
+}
+
+.card {
+    padding: 0px 12px;
 }
 
 
