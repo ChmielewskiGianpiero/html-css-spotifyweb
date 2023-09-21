@@ -56,6 +56,37 @@
     .title-section-playlist{
         display: none;
     }
+
+    .line::after{
+        display: none;
+    }
+
+    .profile{
+        margin-left: 10px;
+        height: 20px;
+    }
+
+    .profile-row {
+        align-items: end;
+        width: 20px;
+    }
+
+    .footer-aside {
+        padding-left: 0px;
+    }
+
+    .profile-row span{
+        display: none;
+    }
+
+    .download-text{
+        display: none;
+    }
+
+    .download{
+        margin-bottom: 14px;
+        margin-left: 12px;
+    }
 }
 
 

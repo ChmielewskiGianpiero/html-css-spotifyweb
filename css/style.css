@@ -103,7 +103,8 @@ a{
 
 .home,
 .search,
-.library{
+.library,
+.profile{
     max-width: 25px;
 }
 
@@ -113,16 +114,18 @@ a{
     gap: 10px;
     padding-left: 25px;
     line-height: 25px;
-}
-
-.aside-list{
     color: var(--light-grey);
     font-weight: 600;
 }
 
+.aside-list a:hover{
+    color: var(--light);
+}
+
 .title-section-playlist{
     color: var(--light);
-    font-size: 14px;
+    font-size: 12px;
+    margin-top: 15px;
 }
 
 .title-icon{
@@ -134,6 +137,53 @@ a{
     color: #A3A3A3;
 }
 
+.fa-square-plus:hover{
+    font-size: 45px;
+    color: var(--light);
+}
+
+.footer-aside{
+    padding-left: 25px;
+}
+
+.download{
+    max-width: 15px;
+}
+
+.profile{
+    background-color: var(--light-grey);
+    border-radius: 17px;
+    aspect-ratio: 1 / 1;
+}
+
+.download,
+.profile{
+    margin-right: 10px;
+}
+
+.profile-row{
+    padding-bottom: 15px;
+}
+
+.download,
+.download-text{
+    color: var(--light-grey);
+}
+
+.download-text:hover{
+    color: var(--light);
+}
+
+.line::after{
+    content: "";
+    border: 1px solid var(--light-grey);
+    width: 75%;
+    display: block;
+    margin: 10px 0px;
+}
+
+
+
 
 
 /* main */
@@ -142,6 +192,11 @@ a{
     flex-grow: 1;
     overflow: hidden;
     background-color: var(--dark-blue);
+}
+
+.content{
+    height: 100%;
+
 }
 
 
@@ -292,7 +347,7 @@ a{
 }
 
 .debug .main-content {
-    /* border: 2px solid orange; */
+    border: 2px solid orange;
 }
 
 .debug .toolbar {
@@ -307,11 +362,17 @@ a{
     /* border: 2px solid blue; */
 }
 
-.debug .aside{
+/* .debug .aside{
     border: 1px solid red;
 }
 
 .debug .nav-app, 
 .debug .footer-aside{
     border: 1px solid green;
+} */
+
+.debug .upgrade,
+.debug .content{
+    border: 1px solid green;
+    padding: 20px;
 }
