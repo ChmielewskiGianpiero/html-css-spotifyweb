@@ -33,6 +33,7 @@ a{
     --dark-blue:#141922;
     --light:#FFFFFF;
     --dark:#000000;
+    --lime:#ADFF2F;
 
 }
 
@@ -45,6 +46,7 @@ a{
 
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .items-center{
@@ -55,12 +57,20 @@ a{
     justify-content: flex-end;
 }
 
+.justify-center{
+    justify-content: center;
+}
+
+.gap{
+    gap: 25px;
+}
+
 /* component classes */
 
 .button{
     border: 1px solid var(--light);
     border-radius: 50px;
-    padding: 5px 30px;
+    padding: 10px 30px;
     font-size: 12px;
 }
 
@@ -215,6 +225,30 @@ a{
     background-color: rgba(0, 0, 0, .25);
     padding: 20px;
     position: sticky;
+    height: 10%;
+}
+
+.upgrade .button:hover{
+    font-size: 15px;
+}
+
+.nav-menu{
+    font-size: 15px;
+    color: var(--light-grey);
+}
+
+.nav-menu li:hover{
+    color: var(--light);
+}
+
+.menu-list li:first-child::after{
+    content: "";
+    border-bottom: 2px solid var(--lime);
+    display: block;
+    padding-top: 5px;
+    width: 35%;
+    position: relative;
+    left: 33px;
 }
 
 
